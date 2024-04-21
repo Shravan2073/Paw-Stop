@@ -7,13 +7,40 @@
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body bgcolor="white">
+<video autoplay muted loop class="background-video">
+    <source src="d1.mp4" type="video/mp4">
+</video>
+<style>
+  .background-video
+  {
+    position:absolute;
+    right:0;
+    bottom:0;
+    z-index: -1;
+    
+  }
+  @media (min-aspect-ratio: 16/9) {
+    .background-video {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  @media (max-aspect-ratio: 16/9) {
+    .background-video {
+      width: auto;
+      height: 100%;
+    }
+  }
+</style>
+
   <div class="bg-white">
     <header class="absolute inset-x-0 top-0 z-50">
       <nav class="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
         <div class="flex lg:flex-1">
           <a href="#" class="-m-1.5 p-1.5">
             <span class="sr-only">PawStop</span>
-            <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="">
+            <img class="h-8 w-auto" src="logo.jpeg" alt="">
           </a>
         </div>
         <div class="flex lg:hidden">
@@ -25,13 +52,13 @@
           </button>
         </div>
         <div class="hidden lg:flex lg:gap-x-12">
-          <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Product</a>
-          <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Features</a>
-          <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Marketplace</a>
+          <a href="#" class="text-sm font-semibold leading-6 text-gray-900">heloooz</a>
+          <a href="#" class="text-sm font-semibold leading-6 text-gray-900">mwow2</a>
+          <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Ma2</a>
           <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Company</a>
         </div>
         <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-          <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Log in <span aria-hidden="true">&rarr;</span></a>
+          <a href="signin.html" class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Log In <span aria-hidden="true">&rarr;</span></a>
         </div>
       </nav>
       <!-- Mobile menu, show/hide based on menu open state. -->
@@ -54,10 +81,10 @@
           <div class="mt-6 flow-root">
             <div class="-my-6 divide-y divide-gray-500/10">
               <div class="space-y-2 py-6">
-                <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Services</a>
-                <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Adoption</a>
-                <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Daycare</a>
-                <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Company</a>
+                <b><a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">hello</a></b>
+              <b><a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Adoption</a></b>
+              <b><a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Daycare</a></b>
+              <b><a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Company</a></b>
               </div>
               <div class="py-6">
                 <a href="signin.html" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Log in</a>
@@ -79,10 +106,10 @@
           </div>
         </div>
         <div class="text-center">
-          <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">Data to enrich your online business</h1>
+          <h1 class="text-4xl font-bold tracking-tight text-grey-900 sm:text-6xl">Love pets? you'r at the right palce</h1>
           <p class="mt-6 text-lg leading-8 text-gray-600">Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.</p>
           <div class="mt-10 flex items-center justify-center gap-x-6">
-            <a href="#" class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Get started</a>
+            <a href="#" class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Adopt h</a>
             <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Learn more <span aria-hidden="true">→</span></a>
           </div>
         </div>
