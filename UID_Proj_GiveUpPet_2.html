@@ -1,0 +1,173 @@
+<!DOCTYPE HTML>
+
+<html>
+    <head>
+
+        <title>Give Up Pet for Adoption</title>
+        
+        <style>
+            
+            body {
+                font-family: Arial, sans-serif;
+                font-size:large;
+            }
+            header {
+                background-color: #333;
+                color: #fff;
+                padding: 10px 0;
+                text-align: center;
+            }
+            label {
+                display: block;
+                margin-bottom: 5px;
+            }
+            
+            /*input[type="text"],
+            input[type="number"],*/
+
+            textarea {
+                width: 100%;
+                padding: 8px;
+                margin-bottom: 10px;
+                box-sizing: border-box;
+            }
+
+            input[type="submit"] {
+                background-color: #4CAF50;
+                color: white;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 4px;
+                font-size: 16px;
+            }
+
+            input[type="submit"]:hover {
+                background-color: #45a049;
+            }
+
+            input[type="reset"] {
+                background-color: #4CAF50;
+                color: white;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 4px;
+                font-size: 16px;
+            }
+
+            input[type="reset"]:hover {
+                background-color: #45a049;
+            }
+
+        </style>
+
+    </head>
+    
+    <body>
+
+        <header>
+            <h1>Giving Up A Pet For Adoption</h1>
+        </header>
+        
+        <br>
+
+        <form id="adoptionForm" method="post" action="about:blank" enctype="multipart/form-data">
+
+            <label for="petName">Pet Name:</label>
+            <input type="text" id="petName" name="petName" required>
+            <br><br>
+
+            <label for="petGender">Pet Gender: </label>
+            <select name="petGender" id="petGender" required>
+                <option value="Value1" selected="selected">Male</option>
+                <option value="Value2">Female</option>
+            </select>
+            <br><br>
+
+            <label for="petType">Pet Type:</label>
+            <input type="text" id="petType" name="petType" required>
+            <br><br>
+
+            <label for="petAge">Pet Age:</label>
+            <input type="number" id="petAge" name="petAge" min="0" required>
+            <br><br>
+
+            <label for="petVacc">Pet is vaccinated? : </label>
+            <select name="petVacc" id="petVacc" required>
+                <option value="Value1" selected="selected">Yes</option>
+                <option value="Value2">No</option>
+            </select>
+            <br><br>
+
+            <label for="petNeut">Pet is neutered? : </label>
+            <select name="petNeut" id="petNeut" required>
+                <option value="Value1" selected="selected">Yes</option>
+                <option value="Value2">No</option>
+            </select>
+            <br><br>
+
+            <label for="petDisAndInj">Any disabilities or injuries?:</label>
+            <textarea id="petDisAndInj" name="petDisAndInj" rows="4" required></textarea>
+            <br><br>
+
+            <label for="petPhoto">Photo of your pet:</label>
+            <input type="file" name="photo" id="petPhoto" value="Upload an image of your pet" required/>
+            <br><br>
+
+            <label for="reasons">Reasons for Giving Up the Pet:</label>
+            <textarea id="reasons" name="reasons" rows="4" required></textarea>
+            <br><br>
+
+            <input type="submit" value="Submit">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="reset" value="Reset Form">
+
+        </form>
+
+        <script>
+
+            document.getElementById('adoptionForm').addEventListener('submit', function(event) {
+                event.preventDefault(); // Prevent the default form submission
+
+                // Ask for confirmation before submitting
+                const confirmation = confirm("Are you sure you want to give up your pet for adoption?");
+                if (confirmation) {
+                    // If user confirms, submit the form
+                    this.submit();
+                }
+                else {
+                    // If user cancels, do nothing
+                    return false;
+                }
+            });
+
+        </script>
+
+    </body>
+
+</html>
+
+<!--
+HTML Structure:
+The HTML code starts with the <!DOCTYPE html> declaration, which specifies the document type and version of HTML being used.
+Inside the <head> section, we set the character set, viewport, and title of the document.
+In the <style> section, we define some basic styling for the form elements using CSS.
+
+Form Structure:
+The form is created using the <form> element with the id attribute set to "adoptionForm" and the method attribute set to "post". This means that when the form is submitted, the data will be sent to the server using the POST method.
+Inside the form, we have several input fields:
+Pet Name: <input type="text">
+Pet Type: <input type="text">
+Pet Age: <input type="number"> with the min attribute set to "0" to ensure the minimum value is 0.
+Reasons for Giving Up the Pet: <textarea>
+Finally, we have a submit button <input type="submit">.
+
+JavaScript Functionality:
+We use JavaScript to add functionality to the form submission process.
+We select the form using document.getElementById('adoptionForm') and add an event listener for the 'submit' event.
+When the form is submitted, the event listener function is triggered.
+Inside the event listener function:
+We prevent the default form submission behavior using event.preventDefault(). This prevents the form from being submitted immediately.
+We display a confirmation dialog box using confirm("Are you sure you want to give up your pet for adoption?"). This dialog box will display a message and OK/Cancel buttons.
+If the user clicks "OK", the confirm() function returns true, so we submit the form using this.submit().
+If the user clicks "Cancel" or closes the dialog box, the confirm() function returns false, and we do nothing (return false), effectively canceling the form submission.
+-->

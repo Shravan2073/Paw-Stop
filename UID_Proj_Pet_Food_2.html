@@ -1,0 +1,154 @@
+<!DOCTYPE HTML>
+
+<html>
+
+    <head>
+
+        <title>Pet Food Shop</title>
+
+        <style>
+
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+            }
+
+            header {
+                background-color: #333;
+                color: #fff;
+                padding: 10px 0;
+                text-align: center;
+            }
+
+            .container {
+                max-width: 960px;
+                margin: 20px auto;
+                padding: 0 20px;
+            }
+
+            .product {
+                border: 1px solid #ccc;
+                padding: 20px;
+                margin-bottom: 20px;
+            }
+
+            button {
+                background-color: #4CAF50;
+                color: white;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 4px;
+            }
+
+            button:hover {
+                background-color: #45a049;
+            }
+
+            .cart {
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+                background-color: #4CAF50;
+                color: white;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 4px;
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+
+        <header>
+            <h1>Pet Accessories Shop</h1>
+        </header>
+
+        <div class="container">
+
+            <div class="product" id="Dog">
+                <h2>Dog Food</h2>
+                <p>Price: $10</p>
+                <button onclick="addToCart('Dog Food', 10)">Add to Cart</button>
+            </div>
+
+            <div class="product" id="Cat">
+                <h2>Cat food</h2>
+                <p>Price: $10</p>
+                <button onclick="addToCart('Cat Food', 10)">Add to Cart</button>
+            </div>
+
+            <div class="product" id="Bird">
+                <h2>Bird food</h2>
+                <p>Price: $10</p>
+                <button onclick="addToCart('Bird Food', 10)">Add to Cart</button>
+            </div>
+
+            <div class="product" id="Fish">
+                <h2>Fish Food</h2>
+                <p>Price: $10</p>
+                <button onclick="addToCart('Fish Food', 10)">Add to Cart</button>
+            </div>
+
+            <!-- Add more products as needed -->
+
+        </div>
+
+        <button class="cart" onclick="viewCart()">View Cart</button>
+
+        <script>
+            let cart = [];
+
+            function addToCart(itemName, itemPrice) {
+                cart.push({ name: itemName, price: itemPrice });
+                alert(itemName + " added to cart!");
+            }
+
+            function viewCart() {
+                let total = 0;
+                let cartItems = "Cart:\n";
+                for (let item of cart) {
+                cartItems += item.name + ": $" + item.price + "\n";
+                total += item.price;
+                }
+                cartItems += "\nTotal: $" + total;
+                alert(cartItems);
+            }
+        </script>
+
+    </body>
+    
+</html>
+
+<!--
+    HTML Structure:
+The HTML document starts with the usual doctype declaration and sets the language to English.
+Inside the <head> section, we specify the character set, viewport settings, and the title of the webpage.
+The <body> contains the main content of the webpage.
+
+Header:
+We have a <header> element containing the title "Pet Accessories Shop". This serves as the title of the webpage.
+
+Container:
+The .container class sets a maximum width for the content and centers it horizontally on the page.
+
+Product Listings:
+Each product is represented by a <div> element with the class "product".
+Inside each product div, we have:
+A heading (<h2>) for the product name.
+A paragraph (<p>) for the product price.
+An "Add to Cart" button (<button>) with an onclick attribute that calls the addToCart() function with the product name and price as arguments.
+
+Cart Button:
+We have a "View Cart" button positioned fixed at the bottom right corner of the page. This button is styled with the .cart class.
+Clicking this button triggers the viewCart() function.
+
+JavaScript:
+We start by declaring an empty array cart to store the items added to the cart.
+The addToCart() function is called when the "Add to Cart" button for a product is clicked. It takes the product name and price as arguments, creates an object representing the item, and pushes it into the cart array. It then displays an alert confirming the addition of the item to the cart.
+The viewCart() function is called when the "View Cart" button is clicked. It iterates over the items in the cart array, calculates the total price, and constructs a string displaying the items and their prices. This string is then displayed in an alert dialog.
+Styling:
+Basic CSS is used to style the header, products, buttons, and the container.
+-->
