@@ -96,56 +96,58 @@
         <br>
 
         <form id="adoptionForm" method="post" action="about:blank" enctype="multipart/form-data">
+            <fieldset>
+                <legend style="text-align:center">Do you wish to give up your pet?</legend><br>
+                <label for="petName">Pet Name:</label>
+                <input type="text" id="petName" name="petName" style="border:2px solid black" required>
+                <br><br>
 
-            <label for="petName">Pet Name:</label>
-            <input type="text" id="petName" name="petName" style="border:2px solid black" required>
-            <br><br>
+                <label for="petGender">Pet Gender: </label>
+                <select name="petGender" id="petGender" required>
+                    <option value="Value1" selected="selected">Male</option>
+                    <option value="Value2">Female</option>
+                </select>
+                <br><br>
 
-            <label for="petGender">Pet Gender: </label>
-            <select name="petGender" id="petGender" required>
-                <option value="Value1" selected="selected">Male</option>
-                <option value="Value2">Female</option>
-            </select>
-            <br><br>
+                <label for="petType" style="text-align:left">Pet Type:</label>
+                <input type="text" id="petType" name="petType" style="border:2px solid black" required>
+                <br><br>
 
-            <label for="petType" style="text-align:left">Pet Type:</label>
-            <input type="text" id="petType" name="petType" style="border:2px solid black" required>
-            <br><br>
+                <label for="petAge" style="text-align:left">Pet Age:</label>
+                <input type="number" id="petAge" name="petAge" min="0" style="border:2px solid black" required>
+                <br><br>
 
-            <label for="petAge" style="text-align:left">Pet Age:</label>
-            <input type="number" id="petAge" name="petAge" min="0" style="border:2px solid black" required>
-            <br><br>
+                <label for="petVacc" style="text-align:left">Pet is vaccinated? : </label>
+                <select name="petVacc" id="petVacc" required>
+                    <option value="Value1" selected="selected">Yes</option>
+                    <option value="Value2">No</option>
+                </select>
+                <br><br>
 
-            <label for="petVacc" style="text-align:left">Pet is vaccinated? : </label>
-            <select name="petVacc" id="petVacc" required>
-                <option value="Value1" selected="selected">Yes</option>
-                <option value="Value2">No</option>
-            </select>
-            <br><br>
+                <label for="petNeut" style="text-align:left">Pet is neutered? : </label>
+                <select name="petNeut" id="petNeut" required>
+                    <option value="Value1" selected="selected">Yes</option>
+                    <option value="Value2">No</option>
+                </select>
+                <br><br>
 
-            <label for="petNeut" style="text-align:left">Pet is neutered? : </label>
-            <select name="petNeut" id="petNeut" required>
-                <option value="Value1" selected="selected">Yes</option>
-                <option value="Value2">No</option>
-            </select>
-            <br><br>
+                <label for="petDisAndInj" style="text-align:left">Any disabilities or injuries?:</label>
+                <textarea id="petDisAndInj" name="petDisAndInj" rows="4" style="border:2px solid black" required></textarea>
+                <br><br>
 
-            <label for="petDisAndInj" style="text-align:left">Any disabilities or injuries?:</label>
-            <textarea id="petDisAndInj" name="petDisAndInj" rows="4" style="border:2px solid black" required></textarea>
-            <br><br>
+                <label for="petPhoto">Photo of your pet:</label>
+                <input type="file" name="photo" id="petPhoto" value="Upload an image of your pet" required/>
+                <br><br>
 
-            <label for="petPhoto">Photo of your pet:</label>
-            <input type="file" name="photo" id="petPhoto" value="Upload an image of your pet" required/>
-            <br><br>
+                <label for="reasons" style="text-align:left">Reasons for Giving Up the Pet:</label>
+                <textarea id="reasons" name="reasons" rows="4" style="border:2px solid black" required></textarea>
+                <br><br>
 
-            <label for="reasons" style="text-align:left">Reasons for Giving Up the Pet:</label>
-            <textarea id="reasons" name="reasons" rows="4" style="border:2px solid black" required></textarea>
-            <br><br>
-
-            <input type="submit" value="Submit">
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <input type="reset" value="Reset Form">
-
+                <input type="submit" value="Submit">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="reset" value="Reset Form">
+            
+            </fieldset>
         </form>
 
         <script>
