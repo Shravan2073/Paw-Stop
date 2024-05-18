@@ -11,7 +11,7 @@
         <style>
             
             body {
-                font-family: Arial, sans-serif;
+                font-family: Arial, sans-serif; 
                 font-size:large;
             }
             header {
@@ -98,7 +98,7 @@
         <form id="adoptionForm" method="post" action="about:blank" enctype="multipart/form-data">
 
             <label for="petName">Pet Name:</label>
-            <input type="text" id="petName" name="petName" required>
+            <input type="text" id="petName" name="petName" style="border:2px solid black" required>
             <br><br>
 
             <label for="petGender">Pet Gender: </label>
@@ -108,38 +108,38 @@
             </select>
             <br><br>
 
-            <label for="petType">Pet Type:</label>
-            <input type="text" id="petType" name="petType" required>
+            <label for="petType" style="text-align:left">Pet Type:</label>
+            <input type="text" id="petType" name="petType" style="border:2px solid black" required>
             <br><br>
 
-            <label for="petAge">Pet Age:</label>
-            <input type="number" id="petAge" name="petAge" min="0" required>
+            <label for="petAge" style="text-align:left">Pet Age:</label>
+            <input type="number" id="petAge" name="petAge" min="0" style="border:2px solid black" required>
             <br><br>
 
-            <label for="petVacc">Pet is vaccinated? : </label>
+            <label for="petVacc" style="text-align:left">Pet is vaccinated? : </label>
             <select name="petVacc" id="petVacc" required>
                 <option value="Value1" selected="selected">Yes</option>
                 <option value="Value2">No</option>
             </select>
             <br><br>
 
-            <label for="petNeut">Pet is neutered? : </label>
+            <label for="petNeut" style="text-align:left">Pet is neutered? : </label>
             <select name="petNeut" id="petNeut" required>
                 <option value="Value1" selected="selected">Yes</option>
                 <option value="Value2">No</option>
             </select>
             <br><br>
 
-            <label for="petDisAndInj">Any disabilities or injuries?:</label>
-            <textarea id="petDisAndInj" name="petDisAndInj" rows="4" required></textarea>
+            <label for="petDisAndInj" style="text-align:left">Any disabilities or injuries?:</label>
+            <textarea id="petDisAndInj" name="petDisAndInj" rows="4" style="border:2px solid black" required></textarea>
             <br><br>
 
             <label for="petPhoto">Photo of your pet:</label>
             <input type="file" name="photo" id="petPhoto" value="Upload an image of your pet" required/>
             <br><br>
 
-            <label for="reasons">Reasons for Giving Up the Pet:</label>
-            <textarea id="reasons" name="reasons" rows="4" required></textarea>
+            <label for="reasons" style="text-align:left">Reasons for Giving Up the Pet:</label>
+            <textarea id="reasons" name="reasons" rows="4" style="border:2px solid black" required></textarea>
             <br><br>
 
             <input type="submit" value="Submit">
