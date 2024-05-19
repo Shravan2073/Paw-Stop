@@ -36,7 +36,7 @@ main {
 /* Individual section cards */
 section {
   width: 300px;
-  margin: 20px;
+  margin: 20px auto;
   padding: 20px;
   border-radius: 10px;
   text-align: center;
@@ -84,4 +84,6 @@ section:hover img {
 #obedience,#leash,#puppy-board,#customized{
   background-color: #3cab77;
 }
-
+#obedience,#leash,#puppy-board,#customized ul {
+  text-align: left;
+}
