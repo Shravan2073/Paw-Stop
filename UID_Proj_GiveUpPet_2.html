@@ -4,174 +4,223 @@
     <head>
         <link rel="icon" href="logo.jpeg">
         <script src="https://cdn.tailwindcss.com"></script>
+        
         <link href="./output.css" rel="stylesheet">
 
         <title>PawStop | Pet Rehoming</title>
         
         <style>
-            #LegID {
-                font-family: 'Times New Roman', Times, serif;
-                font-size:30px;
-                text-align:left;
-            }
-            #hr1 {
-                height:2px;
-                background-color: black;
-                border:none;
-            }
             body {
-                font-family: 'Times New Roman', Times, serif; 
-                font-size:large;
+              font-family: Arial, sans-serif;
+              margin: 0;
+              padding: 0;
+              background-color: #f2f2f2;
             }
             header {
-                background-color: #333;
-                color: #fff;
-                padding: 10px 0;
-                text-align: center;
+              background-color: #333;
+              color: #fff;
+              padding: 10px 0;
+              text-align: center;
+            }
+            nav {
+              background-color: #444;
+              color: #fff;
+              overflow: hidden;
+            }
+            nav a {
+              float: left;
+              display: block;
+              color: #fff;
+              text-align: center;
+              padding: 14px 20px;
+              text-decoration: none;
+            }
+            nav a:hover {
+              background-color: #ddd;
+              color: #000;
+            }
+            .container {
+              max-width: 960px;
+              margin: 20px auto;
+              padding: 0 20px;
+              background-color: #fff;
+              border-radius: 8px;
+              box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             }
             form {
-                text-align:center;
+              border: 1px solid #ccc;
+              padding: 20px;
+              margin-bottom: 20px;
             }
             label {
-                display: block;
-                margin-bottom: 5px;
+              display: block;
+              margin-bottom: 8px;
             }
-            /*input[type="text"] {
-                size:"25";
-            }
-            input[type="number"],*/
+            input[type="text"],
+            input[type="number"],
             textarea {
-                width: 50%;
-                padding: 8px;
-                margin-bottom: 10px;
-                box-sizing: border-box;
+              width: calc(100% - 12px);
+              padding: 8px;
+              margin-bottom: 10px;
+              box-sizing: border-box;
+              border:2px solid black;
             }
-
-            input[type="submit"] {
-                background-color: #4CAF50;
-                color: white;
-                padding: 10px 20px;
-                border: none;
-                border-radius: 4px;
-                font-size: 16px;
+            .radio-group {
+              margin-bottom: 20px;
             }
-
-            input[type="submit"]:hover {
-                background-color: #45a049;
+            .radio-group label {
+              display: inline-block;
+              margin-right: 10px;
             }
-
-            input[type="reset"] {
-                background-color: #4CAF50;
-                color: white;
-                padding: 10px 20px;
-                border: none;
-                border-radius: 4px;
-                font-size: 16px;
+            .radio-group input {
+              margin-right: 5px;
             }
-
-            input[type="reset"]:hover {
-                background-color: #45a049;
+            button {
+              background-color: #07b80d;
+              color: white;
+              padding: 10px 20px;
+              border: none;
+              border-radius: 4px;
+              cursor: pointer;
+              margin-right: 10px;
             }
-
-        </style>
-
-    </head>
-    
-    <body>
-        <div class="relative isolate flex items-center gap-x-6 overflow-hidden bg-gray-50 px-6 py-2.5 sm:px-3.5 sm:before:flex-1">
-            <div class="absolute left-[max(-7rem,calc(50%-52rem))] top-1/2 -z-10 -translate-y-1/2 transform-gpu blur-2xl" aria-hidden="true">
-              <div class="aspect-[577/310] w-[36.0625rem] bg-gradient-to-r from-[#ff80b5] to-[#9089fc] opacity-30" style="clip-path: polygon(74.8% 41.9%, 97.2% 73.2%, 100% 34.9%, 92.5% 0.4%, 87.5% 0%, 75% 28.6%, 58.5% 54.6%, 50.1% 56.8%, 46.9% 44%, 48.3% 17.4%, 24.7% 53.9%, 0% 27.9%, 11.9% 74.2%, 24.9% 54.1%, 68.6% 100%, 74.8% 41.9%)"></div>
-            </div>
-            <div class="absolute left-[max(45rem,calc(50%+8rem))] top-1/2 -z-10 -translate-y-1/2 transform-gpu blur-2xl" aria-hidden="true">
-              <div class="aspect-[577/310] w-[36.0625rem] bg-gradient-to-r from-[#ff80b5] to-[#9089fc] opacity-30" style="clip-path: polygon(74.8% 41.9%, 97.2% 73.2%, 100% 34.9%, 92.5% 0.4%, 87.5% 0%, 75% 28.6%, 58.5% 54.6%, 50.1% 56.8%, 46.9% 44%, 48.3% 17.4%, 24.7% 53.9%, 0% 27.9%, 11.9% 74.2%, 24.9% 54.1%, 68.6% 100%, 74.8% 41.9%)"></div>
-            </div>
-            <div class="flex flex-wrap items-center gap-x-4 gap-y-2">
-              <p class="text-sm leading-6 text-gray-900">
-                <strong class="font-semibold">GeneriCon 2023</strong><svg viewBox="0 0 2 2" class="mx-2 inline h-0.5 w-0.5 fill-current" aria-hidden="true"><circle cx="1" cy="1" r="1" /></svg>Join us in Denver from June 7 – 9 to see what’s coming next.
-              </p>
-              <a href="#" class="flex-none rounded-full bg-gray-900 px-3.5 py-1 text-sm font-semibold text-white shadow-sm hover:bg-gray-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900">Register now <span aria-hidden="true">&rarr;</span></a>
-            </div>
-            <div class="flex flex-1 justify-end">
-              <button type="button" class="-m-3 p-3 focus-visible:outline-offset-[-4px]">
-                <span class="sr-only">Dismiss</span>
-                <svg class="h-5 w-5 text-gray-900" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                  <path d="M6.28 5.22a.75.75 0 00-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 101.06 1.06L10 11.06l3.72 3.72a.75.75 0 101.06-1.06L11.06 10l3.72-3.72a.75.75 0 00-1.06-1.06L10 8.94 6.28 5.22z" />
-                </svg>
-              </button>
-            </div>
+            button:hover {
+              background-color: #45a049;
+            }
+            .menu {
+              background-color: #333;
+              color: #fff;
+              padding: 10px;
+            }
+            .menu a {
+              color: #fff;
+              text-decoration: none;
+              margin-right: 10px;
+            }
+          </style>
+          </head>
+          <body>
+              <header>
+                  <h1>Rehoming Your Pet</h1>
+              </header>
+          
+          <nav>
+            <a href="main_page.html">Home</a>
+            <a href="joinus.html">About Us</a>
+            <a href="adopt.html">Adopt a Pet</a>
+            <a href="UID_Proj_GiveUpPet_2.html">Give Up a Pet</a>
+            <a href="Great.html">Training Programs</a>
+            <a href="Peteventandactivities.html">Events & Activities</a>
+            <a href="UID_Proj_Pet_Food_2.html">Buy Food</a>
+            <a href="UID_Proj_Pet_Accessories_2.html">Buy Accessories</a>
+            <a href="vet-entry.html">Call a Vet</a>
+            <a href="signin.html">Sign In</a>
+            <a href="signup.html">Sign Up</a>
+          </nav>
+          
+          <div class="container">
+              <form id="giveUpPetForm" method="post">
+                  <label for="petImg">Picture of your Pet: </label>
+                  <input type="file" id="petImg" name="petImg" />   
+                  <br><br>               
+                  <label for="petName">Pet Name:</label>
+                  <input type="text" id="petName" name="petName" placeholder="Pet Name" required>
+              
+                  <label for="petAge">Pet Age:</label>
+                  <input type="number" id="petAge" name="petAge" min="0" placeholder="Pet Age" required>
+              
+                  <label for="petBreed">Pet Breed:</label>
+                  <input type="text" id="petBreed" name="petBreed" placeholder="Pet Breed" required>
+              
+                  <label for="healthIssues">Health Issues:</label>
+                  <textarea id="healthIssues" name="healthIssues" rows="4" placeholder="Pet Health Issues" required></textarea>
+              
+                  <div class="radio-group">
+                    <label>Is the pet neutered?</label>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio" id="neuteredYes" name="neutered" value="yes" required>
+                    <label for="neuteredYes">Yes</label>
+                    <input type="radio" id="neuteredNo" name="neutered" value="no">
+                    <label for="neuteredNo">No</label>
+                  </div>
+              
+                  <div class="radio-group">
+                    <label>Is the pet spayed?</label>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio" id="spayedYes" name="spayed" value="yes" required>
+                    <label for="spayedYes">Yes</label>
+                    <input type="radio" id="spayedNo" name="spayed" value="no">
+                    <label for="spayedNo">No</label>
+                  </div>
+              
+                  <div class="radio-group">
+                    <label>Is the pet vaccinated?</label>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio" id="vaccinatedYes" name="vaccinated" value="yes" required>
+                    <label for="vaccinatedYes">Yes</label>
+                    <input type="radio" id="vaccinatedNo" name="vaccinated" value="no">
+                    <label for="vaccinatedNo">No</label>
+                  </div>
+              
+                  <div class="radio-group">
+                    <label>Are the pet's shots up to date?</label>
+                    &nbsp;
+                    <input type="radio" id="shotsUpToDateYes" name="shotsUpToDate" value="yes" required>
+                    <label for="shotsUpToDateYes">Yes</label>
+                    <input type="radio" id="shotsUpToDateNo" name="shotsUpToDate" value="no">
+                    <label for="shotsUpToDateNo">No</label>
+                  </div>
+              
+                  <div class="radio-group">
+                    <label>Is the pet good with other pets?</label>
+                    
+                    <input type="radio" id="goodWithPetsYes" name="goodWithPets" value="yes" required>
+                    <label for="goodWithPetsYes">Yes</label>
+                    <input type="radio" id="goodWithPetsNo" name="goodWithPets" value="no">
+                    <label for="goodWithPetsNo">No</label>
+                  </div>
+              
+                  <div class="radio-group">
+                    <label>Is the pet good with kids?</label>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio" id="goodWithKidsYes" name="goodWithKids" value="yes" required>
+                    <label for="goodWithKidsYes">Yes</label>
+                    <input type="radio" id="goodWithKidsNo" name="goodWithKids" value="no">
+                    <label for="goodWithKidsNo">No</label>
+                  </div>
+              
+                  <label for="reasons">Reasons for Giving Up the Pet:</label>
+                  <textarea id="reasons" name="reasons" rows="4" placeholder="Reasons for giving up your pet" required></textarea>
+                  <br><br>
+              
+                  <button type="submit" onclick=""style="background-color: #07b80d; padding:15px; color:white">Submit</button>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <button type="reset" style="background-color: #07b80d; padding:15px; color:white">Reset</button>
+                </form>
+            <br><hr style="border-color:rgb(58, 52, 52); size:6px"><br>
+                <p style="font-size: 30px" align="center"><strong>REHOME YOUR PET STRESS-FREE</strong></p>
+                <p>Rehoming or donating your pet should be easy and stress-free both for you and your pet.</p>
+                <p>PawStop has taken the initiative to remove your pet where your pet will be home again. We have created a reliable, simple & free initiative to help you rehome your pet from your loving family directly to another family.</p>
+                <p>Here are some tips for putting your pet for adoption in a loving new home and family -</p>
+                <p>Make your pet look more attractive to potential new owners. Make sure your pet is vaccinated and checked by a veterinarian. Also, make sure your pet is spayed and neutered. This will make your pet more likely to be chosen by a new owner.</p>
+                <p>Be transparent/clear with the new owner. Share all the details about your pet's personality and how they get along with cats, dogs, and people. Share your dog's or cat's favorite food, game, things, and any medical or behavior issues your pet is experiencing so that potential new adopters will have the information they need to determine if your cat or dog would be a good fit for their home and family.</p>
+                <p style="font-size: 30px" align="center"><strong>Why Rehome Your Pet?</strong></p>
+                <p>PawStop provides adopters to meet and learn about pets from the owners who know them best.</p>
+                <p>Loving families keep their pets out of the shelter homes. By rehoming a cat or dog, they can find them loving & caring new family.</p>
+                <p>Shelter homes can focus only on limited resources for your pet.</p>
+                <p>Your pet goes directly from one loving home to another potential owner. ThePetNest provides a stress-free pet adoption platform theryby reducing the chance of illness or discomfort.</p>
+                <p style="font-size: 30px" align="center"><strong>How Does Pet Rehoming Work?</strong></p>
+                <p>Fill in your pet details in the form.</p>
+                <p>Provide every detail of your pet including diet, medication, or existing illness if any.</p>
+                <p>Upload clear and attractive pictures of your pet for potential owners to see and explore.</p>
+                <p>Submit the details to PawStop. Your pet details would be seen by potentials owners.</p>
+                <p>Potential owners would contact you for more details if required and talk to them to see if they are a great fit for your pet.</p>
+                <footer align="center" style="size:15px">&copy;2022, PawStop Pet Care</footer>
           </div>
           
-        <header>
-            <h1><strong>Giving Up A Pet For Adoption</strong></h1>
-        </header>
-        
-        <br>
+          <script>
 
-        <form id="adoptionForm" method="post" action="about:blank" enctype="multipart/form-data" >
-            <fieldset>
-                <legend id="LegID">
-                    &nbsp;&nbsp;&nbsp;&nbsp;
-                    Do you wish to give up your pet?
-                </legend>
-                <br>
-
-                <hr id="hr1">
-
-                <label for="petName">Pet Name:</label>
-                <input type="text" id="petName" name="petName" style="border:2px solid black" placeholder="Enter name of your pet" required>
-                <br><br>
-
-                <label for="petGender">Pet Gender: </label>
-                <select name="petGender" id="petGender" required>
-                    <option value="Value1" selected="selected">Male</option>
-                    <option value="Value2">Female</option>
-                </select>
-                <br><br>
-
-                <label for="petType">Pet Type:</label>
-                <input type="text" id="petType" name="petType" style="border:2px solid black" placeholder="Enter breed of your pet" required>
-                <br><br>
-
-                <label for="petAge">Pet Age:</label>
-                <input type="number" id="petAge" name="petAge" min="0" style="border:2px solid black" value="0" required>
-                <br><br>
-
-                <label for="petVacc">Pet is vaccinated? : </label>
-                <select name="petVacc" id="petVacc" style="border:2px solid black" required>
-                    <option value="Value1" selected="selected">Yes</option>
-                    <option value="Value2">No</option>
-                </select>
-                <br><br>
-
-                <label for="petNeut">Pet is neutered? : </label>
-                <select name="petNeut" id="petNeut" style="border:2px solid black" required>
-                    <option value="Value1" selected="selected">Yes</option>
-                    <option value="Value2">No</option>
-                </select>
-                <br><br>
-
-                <label for="petDisAndInj">Any disabilities or injuries?:</label>
-                <textarea id="petDisAndInj" name="petDisAndInj" rows="4" style="border:2px solid black" placeholder="Enter any disabilities or injuries of your pet" required></textarea>
-                <br><br>
-
-                <label for="petPhoto">Photo of your pet:</label>
-                <input type="file" name="photo" id="petPhoto" value="Upload an image of your pet" style="border:2px solid black" required/>
-                <br><br>
-
-                <label for="reasons">Reasons for Giving Up the Pet:</label>
-                <textarea id="reasons" name="reasons" rows="4" style="border:2px solid black" placeholder="Enter any reasons for why you have chosen to give up your pet" required></textarea>
-                <br><br>
-
-                <input type="submit" value="Submit">
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <input type="reset" value="Reset Form">
-            
-            </fieldset>
-        </form>
-
-        <script>
-
-            document.getElementById('adoptionForm').addEventListener('submit', function(event) {
+            document.getElementById('giveUpPetForm').addEventListener('submit', function(event) {
                 event.preventDefault(); // Prevent the default form submission
 
                 // Ask for confirmation before submitting
@@ -187,11 +236,9 @@
             });
 
         </script>
-
-    </body>
-
-</html>
-
+          
+          </body>
+          </html>
 <!--
 HTML Structure:
 The HTML code starts with the <!DOCTYPE html> declaration, which specifies the document type and version of HTML being used.
