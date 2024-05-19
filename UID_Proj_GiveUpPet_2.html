@@ -183,7 +183,7 @@
                   <textarea id="reasons" name="reasons" rows="4" placeholder="Reasons for giving up your pet" required></textarea>
                   <br><br>
               
-                  <button type="submit" style="background-color: #07b80d; padding:15px; color:white">Submit</button>
+                  <button type="submit" onclick=""style="background-color: #07b80d; padding:15px; color:white">Submit</button>
                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                   <button type="reset" style="background-color: #07b80d; padding:15px; color:white">Reset</button>
                 </form>
@@ -209,26 +209,23 @@
           </div>
           
           <script>
-            document.getElementById('adoptionForm').addEventListener('submit', function(event) {
-              event.preventDefault(); // Prevent the default form submission
-          
-              // Ask for confirmation before submitting
-              const confirmation = confirm("Are you sure you want to give up your pet for adoption?");
-              if (confirmation) {
-                // If user confirms, submit the form
-                const formData = new FormData(this);
-                const formObject = {};
-                formData.forEach((value, key) => {
-                  formObject[key] = value;
-                });
-                console.log(formObject); // Send form data to server or do further processing
-                this.submit();
-              } else {
-                // If user cancels, do nothing
-                return false;
-              }
+
+            document.getElementById('giveUpPetForm').addEventListener('submit', function(event) {
+                event.preventDefault(); // Prevent the default form submission
+
+                // Ask for confirmation before submitting
+                const confirmation = confirm("Are you sure you want to give up your pet for adoption?");
+                if (confirmation) {
+                    // If user confirms, submit the form
+                    this.submit();
+                }
+                else {
+                    // If user cancels, do nothing
+                    return false;
+                }
             });
-          </script>
+
+        </script>
           
           </body>
           </html>
