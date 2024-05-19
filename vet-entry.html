@@ -1,6 +1,8 @@
 <!doctype html>
 <html>
     <head>
+        <link rel="icon" href="logo.jpeg" >
+
         <!-- head section analytics-->
         <script>
             function getCookieByName(name) {
@@ -141,8 +143,9 @@
             <header class="header" ng-controller="HeaderController as headerCtrl" id="home-header" itemscope itemtype="http://schema.org/WPHeader">
 
                 <div class="col-sm-6 col-md-4 col-xs-4 pl-20 col-lg-4 logo-container">
-                    <a href="/" target="_parent">
-                        <span class="logo"></span>
+                    <a href="main_page.html" target="_parent">
+                        <img class="" width="50px" src="logo.jpeg">
+                       <span class="logo.jpeg"></span> 
                     </a>
                     <div class="overlay hidden-xs hidden-sm" ng-show="headerCtrl.showSubMenu" ng-mouseover="headerCtrl.showSubMenu=false"></div>
                     <div class="divider hidden-md hidden-sm hidden-lg hidden-xs all-materials col-md-2" ng-class="{active:headerCtrl.showSubMenu}" ng-click="headerCtrl.showSubMenu=!headerCtrl.showSubMenu;headerCtrl.showNavbar=false;">
@@ -523,7 +526,7 @@
                                 </g>
                             </svg>
                         </div>
-                        <div class="phone-number hidden-xs">1800-123-0025</div>
+                        <div class="phone-number hidden-xs">112312313</div>
                     </a>
                     <div class="login-register-btns" class="col-md-10 col-lg-9 col-sm-12 de-phone de-profile" ng-cloak ng-show="headerCtrl.userNotLogedIn;">
                         <div class="login-signup-holder" ng-click="headerCtrl.rediectToLoginPage()">
