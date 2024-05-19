@@ -2,15 +2,25 @@
 
 <html>
     <head>
+        <link rel="icon" href="logo.jpeg">
         <script src="https://cdn.tailwindcss.com"></script>
-    <link href="./output.css" rel="stylesheet">
+        <link href="./output.css" rel="stylesheet">
 
-        <title>PawStop | Give-pet</title>
+        <title>PawStop | Pet Rehoming</title>
         
         <style>
-            
+            #LegID {
+                font-family: 'Times New Roman', Times, serif;
+                font-size:30px;
+                text-align:left;
+            }
+            #hr1 {
+                height:2px;
+                background-color: black;
+                border:none;
+            }
             body {
-                font-family: Arial, sans-serif;
+                font-family: 'Times New Roman', Times, serif; 
                 font-size:large;
             }
             header {
@@ -19,16 +29,19 @@
                 padding: 10px 0;
                 text-align: center;
             }
+            form {
+                text-align:center;
+            }
             label {
                 display: block;
                 margin-bottom: 5px;
             }
-            
-            /*input[type="text"],
+            /*input[type="text"] {
+                size:"25";
+            }
             input[type="number"],*/
-
             textarea {
-                width: 100%;
+                width: 50%;
                 padding: 8px;
                 margin-bottom: 10px;
                 box-sizing: border-box;
@@ -74,9 +87,9 @@
             </div>
             <div class="flex flex-wrap items-center gap-x-4 gap-y-2">
               <p class="text-sm leading-6 text-gray-900">
-                <strong class="font-semibold">Pet-Stop Meetup 2024</strong><svg viewBox="0 0 2 2" class="mx-2 inline h-0.5 w-0.5 fill-current" aria-hidden="true"><circle cx="1" cy="1" r="1" /></svg>Join us in Denver from June 7 – 9 to see what’s coming next.
+                <strong class="font-semibold">GeneriCon 2023</strong><svg viewBox="0 0 2 2" class="mx-2 inline h-0.5 w-0.5 fill-current" aria-hidden="true"><circle cx="1" cy="1" r="1" /></svg>Join us in Denver from June 7 – 9 to see what’s coming next.
               </p>
-              <a href="Great.html" class="flex-none rounded-full bg-gray-900 px-3.5 py-1 text-sm font-semibold text-white shadow-sm hover:bg-gray-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900">Check it out <span aria-hidden="true">&rarr;</span></a>
+              <a href="#" class="flex-none rounded-full bg-gray-900 px-3.5 py-1 text-sm font-semibold text-white shadow-sm hover:bg-gray-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900">Register now <span aria-hidden="true">&rarr;</span></a>
             </div>
             <div class="flex flex-1 justify-end">
               <button type="button" class="-m-3 p-3 focus-visible:outline-offset-[-4px]">
@@ -88,65 +101,74 @@
             </div>
           </div>
           
-        <center><header>
-            <h1>Giving Up A Pet For Adoption</h1>
+        <header>
+            <h1><strong>Giving Up A Pet For Adoption</strong></h1>
         </header>
         
         <br>
 
-        <form id="adoptionForm" method="post" action="about:blank" enctype="multipart/form-data">
+        <form id="adoptionForm" method="post" action="about:blank" enctype="multipart/form-data" >
+            <fieldset>
+                <legend id="LegID">
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    Do you wish to give up your pet?
+                </legend>
+                <br>
 
-            <label for="petName">Pet Name:</label>
-            <input type="text" id="petName" name="petName" align="left" required>
-            <br><br>
+                <hr id="hr1">
 
-            <label for="petGender">Pet Gender: </label>
-            <select name="petGender" id="petGender" required>
-                <option value="Value1" selected="selected">Male</option>
-                <option value="Value2">Female</option>
-            </select>
-            <br><br>
+                <label for="petName">Pet Name:</label>
+                <input type="text" id="petName" name="petName" style="border:2px solid black" placeholder="Enter name of your pet" required>
+                <br><br>
 
-            <label for="petType">Pet Type:</label>
-            <input type="text" id="petType" name="petType" required>
-            <br><br>
+                <label for="petGender">Pet Gender: </label>
+                <select name="petGender" id="petGender" required>
+                    <option value="Value1" selected="selected">Male</option>
+                    <option value="Value2">Female</option>
+                </select>
+                <br><br>
 
-            <label for="petAge">Pet Age:</label>
-            <input type="number" id="petAge" name="petAge" min="0" required>
-            <br><br>
+                <label for="petType">Pet Type:</label>
+                <input type="text" id="petType" name="petType" style="border:2px solid black" placeholder="Enter breed of your pet" required>
+                <br><br>
 
-            <label for="petVacc">Pet is vaccinated? : </label>
-            <select name="petVacc" id="petVacc" required>
-                <option value="Value1" selected="selected">Yes</option>
-                <option value="Value2">No</option>
-            </select>
-            <br><br>
+                <label for="petAge">Pet Age:</label>
+                <input type="number" id="petAge" name="petAge" min="0" style="border:2px solid black" value="0" required>
+                <br><br>
 
-            <label for="petNeut">Pet is neutered? : </label>
-            <select name="petNeut" id="petNeut" required>
-                <option value="Value1" selected="selected">Yes</option>
-                <option value="Value2">No</option>
-            </select>
-            <br><br>
+                <label for="petVacc">Pet is vaccinated? : </label>
+                <select name="petVacc" id="petVacc" style="border:2px solid black" required>
+                    <option value="Value1" selected="selected">Yes</option>
+                    <option value="Value2">No</option>
+                </select>
+                <br><br>
 
-            <label for="petDisAndInj">Any disabilities or injuries?:</label>
-            <textarea id="petDisAndInj" name="petDisAndInj" rows="4" required></textarea>
-            <br><br>
+                <label for="petNeut">Pet is neutered? : </label>
+                <select name="petNeut" id="petNeut" style="border:2px solid black" required>
+                    <option value="Value1" selected="selected">Yes</option>
+                    <option value="Value2">No</option>
+                </select>
+                <br><br>
 
-            <label for="petPhoto">Photo of your pet:</label>
-            <input type="file" name="photo" id="petPhoto" value="Upload an image of your pet" required/>
-            <br><br>
+                <label for="petDisAndInj">Any disabilities or injuries?:</label>
+                <textarea id="petDisAndInj" name="petDisAndInj" rows="4" style="border:2px solid black" placeholder="Enter any disabilities or injuries of your pet" required></textarea>
+                <br><br>
 
-            <label for="reasons">Reasons for Giving Up the Pet:</label>
-            <textarea id="reasons" name="reasons" rows="4" required></textarea>
-            <br><br>
+                <label for="petPhoto">Photo of your pet:</label>
+                <input type="file" name="photo" id="petPhoto" value="Upload an image of your pet" style="border:2px solid black" required/>
+                <br><br>
 
-            <input type="submit" value="Submit">
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <input type="reset" value="Reset Form">
+                <label for="reasons">Reasons for Giving Up the Pet:</label>
+                <textarea id="reasons" name="reasons" rows="4" style="border:2px solid black" placeholder="Enter any reasons for why you have chosen to give up your pet" required></textarea>
+                <br><br>
 
+                <input type="submit" value="Submit">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="reset" value="Reset Form">
+            
+            </fieldset>
         </form>
-        </center>
+
         <script>
 
             document.getElementById('adoptionForm').addEventListener('submit', function(event) {
