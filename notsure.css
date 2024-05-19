@@ -1,54 +1,87 @@
+
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styles */
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f0f0f0;
-  }
+  font-family: 'Roboto', sans-serif;
+  background-color: #f0f0f0;
+  line-height: 1.6;
+}
+
+/* Header styles */
+header {
+  background-color: #3cab77;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 1.5rem;
+  font-family: 'Great Vibes', cursive;
+  font-family: 'Great Vibes', cursive;
   
-  header {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-  }
-  
-  h1 {
-    margin: 0;
-  }
-  
-  main {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  
-  section {
-    width: 300px;
-    margin: 20px;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    background-color: #fff;
-    transition: transform 0.3s ease;
-  }
-  
-  section:hover {
-    transform: translateY(-5px);
-  }
-  
-  h2 {
-    color: #333;
-  }
-  
-  p {
-    color: #666;
-  }
-  
-  img {
-    max-width: 100%;
-    height: auto;
-    margin-top: 10px;
-    border-radius: 5px;
-  }
-  
+}
+
+/* Main content container */
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Individual section cards */
+section {
+  width: 300px;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  background-color: #fff;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+/* Hover effect */
+section:hover {
+  transform: translateY(-10px) rotate(3deg);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Heading and paragraph styles */
+h2, p {
+  color: #333;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+/* Image styles */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  transition: opacity 0.3s ease;
+}
+
+/* Image hover effect */
+section:hover img {
+  opacity: 0.8;
+}
+::selection{
+  color:cyan;
+}
+#text{
+  padding:20px;
+  padding-bottom: 0px;
+}
+#dogtraining{
+  padding:20px;
+}
+#obedience,#leash,#puppy-board,#customized{
+  background-color: #3cab77;
+}
+
