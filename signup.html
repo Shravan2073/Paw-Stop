@@ -6,55 +6,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    
 </head>
 <body>
-<nav class="bg-gray-800">
-  <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-    <div class="relative flex h-16 items-center justify-between">
-      <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
-        <!-- Mobile menu button-->
-        <button type="button" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
-          <span class="absolute -inset-0.5"></span>
-          <span class="sr-only">Open main menu</span>
-          <!--
-            Icon when menu is closed.
-
-            Menu open: "hidden", Menu closed: "block"
-          -->
-          <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-          </svg>
-          <!--
-            Icon when menu is open.
-
-            Menu open: "block", Menu closed: "hidden"
-          -->
-          <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-          </svg>
-        </button>
-      </div>
-      <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-        <div class="flex flex-shrink-0 items-center">
-          <img class="h-8 w-auto" src="logo.jpeg" alt="Your Company">
-        </div>
-        <div class="hidden sm:ml-6 sm:block">
-          <div class="flex space-x-4">
-            <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-            <a href="main_page.html" class="bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium" aria-current="page">Home</a>
-            <a href="signin.html" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Log-In</a>
-            <a href="http://google.com" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">meow</a>
-            <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"></a>
-          </div>
-        </div>
-      </div>
-      
-  </div>
-
-  <!-- Mobile menu, show/hide based on menu state. -->
-  
-</nav>
-
+  <style>
+    nav {
+      background-color: #444;
+      color: #fff;
+      overflow: hidden;
+    }
+    nav a {
+      float: left;
+      display: block;
+      color: #fff;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+    }
+    nav a:hover {
+      background-color: #ddd;
+      color: #000;
+    }
+</style>
+<nav>
+            <a href="main_page.html">Home</a>
+            <a href="joinus.html">About Us</a>
+            <a href="adopt.html">Adopt a Pet</a>
+            <a href="UID_Proj_GiveUpPet_2.html">Give Up a Pet</a>
+            <a href="Great.html">Training Programs</a>
+            <a href="Peteventandactivities.html">Events & Activities</a>
+            <a href="UID_Proj_Pet_Food_2.html">Buy Food</a>
+            <a href="UID_Proj_Pet_Accessories_2.html">Buy Accessories</a>
+            <a href="vet-entry.html">Call a Vet</a>
+            <a href="signin.html">Sign In</a>
+            <a href="signup.html">Sign Up</a>
+          </nav>
 
 <!--
   This example requires some changes to your config:
@@ -93,19 +79,19 @@
         </div>
       </div>
       <div class="sm:col-span-2">
-        <label for="company" class="block text-sm font-semibold leading-6 text-gray-900">Company</label>
+        <label for="MAIL" class="block text-sm font-semibold leading-6 text-gray-900">email</label>
         <div class="mt-2.5">
-          <input type="text" name="company" id="company" autocomplete="organization" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+          <input type="email" name="company" id="company" autocomplete="organization" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
         </div>
       </div>
       <div class="sm:col-span-2">
-        <label for="email" class="block text-sm font-semibold leading-6 text-gray-900">Email</label>
+        <label for="email" class="block text-sm font-semibold leading-6 text-gray-900">Password</label>
         <div class="mt-2.5">
-          <input type="email" name="email" id="email" autocomplete="email" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+          <input type="password" name="email" id="email" autocomplete="email" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
         </div>
       </div>
       <div class="sm:col-span-2">
-        <label for="phone-number" class="block text-sm font-semibold leading-6 text-gray-900">Phone number</label>
+        <label for="phone-number" class="block text-sm font-semibold leading-6 text-gray-900">Re-Enter Password</label>
         <div class="relative mt-2.5">
           <div class="absolute inset-y-0 left-0 flex items-center">
             <label for="country" class="sr-only">Country</label>
@@ -113,16 +99,11 @@
               <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
             </svg>
           </div>
-          <input type="tel" name="phone-number" id="phone-number" autocomplete="tel" class="block w-full rounded-md border-0 px-3.5 py-2 pl-20 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+          <input type="password" name="phone-number" id="phone-number" autocomplete="tel" class="block w-full rounded-md border-0 px-3.5 py-2 pl-20 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
         </div>
-      </div>
+      </div>  
       <div class="sm:col-span-2">
-        <label for="message" class="block text-sm font-semibold leading-6 text-gray-900">Message</label>
-        <div class="mt-2.5">
-          <textarea name="message" id="message" rows="4" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"></textarea>
-        </div>
-      </div>
-      <div class="flex gap-x-4 sm:col-span-2">
+       
         <div class="flex h-6 items-center">
          
         </div>
