@@ -63,6 +63,7 @@
               padding: 8px;
               margin-bottom: 10px;
               box-sizing: border-box;
+              border:2px solid black;
             }
             .radio-group {
               margin-bottom: 20px;
@@ -75,7 +76,7 @@
               margin-right: 5px;
             }
             button {
-              background-color: #4CAF50;
+              background-color: #07b80d;
               color: white;
               padding: 10px 20px;
               border: none;
@@ -113,16 +114,16 @@
           <div class="container">
               <form id="giveUpPetForm" method="post">
                   <label for="petName">Pet Name:</label>
-                  <input type="text" id="petName" name="petName" required>
+                  <input type="text" id="petName" name="petName" placeholder="Pet Name" required>
               
                   <label for="petAge">Pet Age:</label>
-                  <input type="number" id="petAge" name="petAge" min="0" required>
+                  <input type="number" id="petAge" name="petAge" min="0" placeholder="Pet Age" required>
               
                   <label for="petBreed">Pet Breed:</label>
-                  <input type="text" id="petBreed" name="petBreed" required>
+                  <input type="text" id="petBreed" name="petBreed" placeholder="Pet Breed" required>
               
                   <label for="healthIssues">Health Issues:</label>
-                  <textarea id="healthIssues" name="healthIssues" rows="4" required></textarea>
+                  <textarea id="healthIssues" name="healthIssues" rows="4" placeholder="Pet Health Issues" required></textarea>
               
                   <div class="radio-group">
                     <label>Is the pet neutered?</label>
@@ -179,31 +180,32 @@
                   </div>
               
                   <label for="reasons">Reasons for Giving Up the Pet:</label>
-                  <textarea id="reasons" name="reasons" rows="4" required></textarea>
+                  <textarea id="reasons" name="reasons" rows="4" placeholder="Reasons for giving up your pet" required></textarea>
+                  <br><br>
               
-                  <button type="submit">Submit</button>
-                  &nbsp;&nbsp;&nbsp;&nbsp;
-                  <button type="reset">Reset</button>
+                  <button type="submit" style="background-color: #07b80d; padding:15px; color:white">Submit</button>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <button type="reset" style="background-color: #07b80d; padding:15px; color:white">Reset</button>
                 </form>
-          
-            <p style="font-size: 30px" align="center"><strong>REHOME YOUR PET STRESS-FREE</strong></p>
-            <p>Rehoming or donating your pet should be easy and stress-free both for you and your pet.</p>
-            <p>PawStop has taken the initiative to remove your pet where your pet will be home again. We have created a reliable, simple & free initiative to help you rehome your pet from your loving family directly to another family.</p>
-            <p>Here are some tips for putting your pet for adoption in a loving new home and family -</p>
-            <p>Make your pet look more attractive to potential new owners. Make sure your pet is vaccinated and checked by a veterinarian. Also, make sure your pet is spayed and neutered. This will make your pet more likely to be chosen by a new owner.</p>
-            <p>Be transparent/clear with the new owner. Share all the details about your pet's personality and how they get along with cats, dogs, and people. Share your dog's or cat's favorite food, game, things, and any medical or behavior issues your pet is experiencing so that potential new adopters will have the information they need to determine if your cat or dog would be a good fit for their home and family.</p>
-            <p style="font-size: 30px" align="center"><strong>Why Rehome Your Pet?</strong></p>
-            <p>PawStop provides adopters to meet and learn about pets from the owners who know them best.</p>
-            <p>Loving families keep their pets out of the shelter homes. By rehoming a cat or dog, they can find them loving & caring new family.</p>
-            <p>Shelter homes can focus only on limited resources for your pet.</p>
-            <p>Your pet goes directly from one loving home to another potential owner. ThePetNest provides a stress-free pet adoption platform theryby reducing the chance of illness or discomfort.</p>
-            <p style="font-size: 30px" align="center"><strong>How Does Pet Rehoming Work?</strong></p>
-            <p>Fill in your pet details in the form.</p>
-            <p>Provide every detail of your pet including diet, medication, or existing illness if any.</p>
-            <p>Upload clear and attractive pictures of your pet for potential owners to see and explore.</p>
-            <p>Submit the details to PawStop. Your pet details would be seen by potentials owners.</p>
-            <p>Potential owners would contact you for more details if required and talk to them to see if they are a great fit for your pet.</p>
-            <footer>&copy;2022, PawStop Pet Care</footer>
+            <br><hr style="border-color:rgb(58, 52, 52); size:6px"><br>
+                <p style="font-size: 30px" align="center"><strong>REHOME YOUR PET STRESS-FREE</strong></p>
+                <p>Rehoming or donating your pet should be easy and stress-free both for you and your pet.</p>
+                <p>PawStop has taken the initiative to remove your pet where your pet will be home again. We have created a reliable, simple & free initiative to help you rehome your pet from your loving family directly to another family.</p>
+                <p>Here are some tips for putting your pet for adoption in a loving new home and family -</p>
+                <p>Make your pet look more attractive to potential new owners. Make sure your pet is vaccinated and checked by a veterinarian. Also, make sure your pet is spayed and neutered. This will make your pet more likely to be chosen by a new owner.</p>
+                <p>Be transparent/clear with the new owner. Share all the details about your pet's personality and how they get along with cats, dogs, and people. Share your dog's or cat's favorite food, game, things, and any medical or behavior issues your pet is experiencing so that potential new adopters will have the information they need to determine if your cat or dog would be a good fit for their home and family.</p>
+                <p style="font-size: 30px" align="center"><strong>Why Rehome Your Pet?</strong></p>
+                <p>PawStop provides adopters to meet and learn about pets from the owners who know them best.</p>
+                <p>Loving families keep their pets out of the shelter homes. By rehoming a cat or dog, they can find them loving & caring new family.</p>
+                <p>Shelter homes can focus only on limited resources for your pet.</p>
+                <p>Your pet goes directly from one loving home to another potential owner. ThePetNest provides a stress-free pet adoption platform theryby reducing the chance of illness or discomfort.</p>
+                <p style="font-size: 30px" align="center"><strong>How Does Pet Rehoming Work?</strong></p>
+                <p>Fill in your pet details in the form.</p>
+                <p>Provide every detail of your pet including diet, medication, or existing illness if any.</p>
+                <p>Upload clear and attractive pictures of your pet for potential owners to see and explore.</p>
+                <p>Submit the details to PawStop. Your pet details would be seen by potentials owners.</p>
+                <p>Potential owners would contact you for more details if required and talk to them to see if they are a great fit for your pet.</p>
+                <footer>&copy;2022, PawStop Pet Care</footer>
           </div>
           
           <script>
