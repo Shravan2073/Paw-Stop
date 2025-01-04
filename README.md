@@ -1,12 +1,16 @@
-#Project on Pet services
-This is my 2nd sem basic UID project for front end dev. 
+# **Pet Services - Front-End Development Project**
 
-To check this project out you can follow the link provided below. 
+This project was created as part of my **2nd Semester Basic User Interface Design (UID)** coursework, showcasing fundamental front-end development skills.
 
- https://uid-project.pages.dev/main_page
+You can explore the project by visiting the link below:  
+👉 **[Pet Services Project](https://uid-project.pages.dev/main_page)**
 
- Disclaimer: 
- The page does not run as intended on Android and IOS dedvices.
- It is advised to open the page on a PC or a laptop for the best experience
+---
 
- Thank you
+## **Important Note:**  
+The page is optimized for **PCs and laptops** and may not display or function as intended on **Android or iOS devices**. For the best user experience, please access it on a desktop browser.
+
+---
+
+Thank you for checking out my project!
+
