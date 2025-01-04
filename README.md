@@ -1,4 +1,4 @@
-# **Pet Services - Front-End Development Project**
+# **Paw-Stop - Front-End Development Project**
 
 This project was created as part of my **2nd Semester Basic User Interface Design (UID)** coursework, showcasing fundamental front-end development skills.
 
